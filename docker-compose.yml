@@ -1,0 +1,8 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      pull_policy: build
+    ports:
+      - "8787:80"
